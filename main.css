@@ -572,5 +572,21 @@ footer{
         /* display: block; */
         }
     }
+    .animatebtn1{
+   
+        animation: btnaos 1s ;
+        animation-timeline: view();
+        animation-range-start: 5px;
+        animation-range-end: 300px ;
+        overflow: hidden;
+    }
+    .animatebtn2{
+        
+        animation: btnaos2 1s ;
+        animation-timeline: view();
+        animation-range-start: 5px;
+        animation-range-end: 30px ;
+        overflow: hidden;
+    }
 
 }
