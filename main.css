@@ -535,7 +535,7 @@ footer{
 
 
 
-@media only screen and (width<768px){
+/* @media only screen and (width<768px){
 
     .nav-bar{
         justify-content: space-between;
@@ -572,4 +572,4 @@ footer{
         }
     }
 
-}
+} */
