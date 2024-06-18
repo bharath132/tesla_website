@@ -385,8 +385,7 @@
     height: 90vh;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    /* flex-wrap: wrap; */
+    align-items: center;
     justify-content: space-between;
 }
 .car_title,.car_desc,.pricing
@@ -571,22 +570,6 @@ footer{
         to{transform: scale(0%); opacity: 1;
         /* display: block; */
         }
-    }
-    .animatebtn1{
-   
-        animation: btnaos 1s ;
-        animation-timeline: view();
-        animation-range-start: 5px;
-        animation-range-end: 300px ;
-        overflow: hidden;
-    }
-    .animatebtn2{
-        
-        animation: btnaos2 1s ;
-        animation-timeline: view();
-        animation-range-start: 5px;
-        animation-range-end: 30px ;
-        overflow: hidden;
     }
 
 }
