@@ -462,7 +462,7 @@
     /* width: 100%; */
     border: solid;
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     margin-bottom: 80px;
     justify-content: center;
 }
@@ -535,7 +535,7 @@ footer{
 
 
 
-/* @media only screen and (width<768px){
+@media only screen and (width<768px){
 
     .nav-bar{
         justify-content: space-between;
@@ -572,4 +572,4 @@ footer{
         }
     }
 
-} */
+}
