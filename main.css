@@ -462,7 +462,7 @@
     /* width: 100%; */
     border: solid;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     margin-bottom: 80px;
     justify-content: center;
 }
@@ -565,10 +565,10 @@ footer{
         from{transform: scale(0%);
             overflowx: hidden;
             opacity: 0;
-        /* display: none; */
+        display: none;
         }
         to{transform: scale(0%); opacity: 1;
-        /* display: block; */
+        display: block;
         }
     }
 
