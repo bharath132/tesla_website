@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.nav-bar{
+    width: 100%;
+    position: sticky;
+    display: flex;
+    top: 0;
+    justify-content: space-between;
+    /* background-color: brown; */
+    height: 7vh;
+    padding: 20px 20px;
+    background-color: white;
+    z-index: 99;
+}
+.logo{
+    width: 20%;
+}
+.logo img{
+    width: 100px;
+}
+.help svg{
+    width: 30px;
+}
+.help{
+    
+   
+    display: flex;
+    justify-content: flex-end;
+    color: rgb(59, 59, 59);
+}
+
+
+
+
+/* container section */
+
+.container{
+    position: sticky;
+    top: 7vh;
+    display: flex;
+}
+.image_container{ 
+    position: relative;
+    height: 90vh;
+    width: 75%;
+    position: sticky;
+    top: 7vh;
+    /* top: auto; */
+    background-color: blue;
+}
+.image_container img{
+    height: 100%;
+    width: 100%;
+    
+}
+.order_section{
+    width: 24%;
+    margin-top: 7vh;
+}
+.order_section h1{
+    font-size: xx-large;
+    text-align: center;
+}
+.car_desc{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-around;
+}
+.car_desc h1{
+    font-size: larger;
+    color: gray;
+}
+.car_desc h1 span{
+    font-size: small;
+}
+.pay_selection{
+    width: 100%;
+}
+.pay_selection ul{
+    /* padding: 0 0 0 40px; */
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.pay_selection ul li{
+    list-style: none;
+    color: rgb(90, 92, 92);
+    /* background-color: blue; */
+    font-weight: 700;
+    padding: 10px 20px;
+    position: relative;
+}
+.pay_price_content{
+    /* width: 100%;
+    height: max-content; */
+    margin-bottom: 50px;
+    /* background-color: blue; */
+    position: relative;
+}
+
+.pay_price{
+    width: 100%;
+    margin-bottom: 20px;
+    opacity: 0;
+    top: 20PX;
+    position: absolute;
+}
+.zero{
+    margin-bottom: 50px;
+    position: relative;
+}
+/* .pay_selection_link::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(140, 140, 141);
+} */
+.link::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(81, 81, 88);
+}
+.link1{
+    display: block;
+    opacity: 1;
+}
+.link1::after{
+    animation: pay .5s;
+    background-color: rgb(0, 0, 255);
+}
+@keyframes pay {
+    from{
+        transform: scale(0%);
+    }
+    to{
+        transform: scale(100%);
+    }
+    
+}
+
+.price_box{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid rgb(83, 83, 87);
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px 5px;
+}
+.active{
+    border: 4px solid #3e6ae1;
+    border-radius: 5px;
+}
+.features{
+    /* background-color: rgb(0, 253, 253); */
+    width: max-content;
+    margin: 40px auto;
+    height: max-content;
+    text-align: center;
+}
+.button{
+    padding: 5px 20px;
+    margin: 20px auto;
+    width: max-content;
+    border-radius: 5px;
+    background-color: rgb(223, 233, 233);
+}
+
+
+
+.paint{
+    margin: 100px 0 0 0;
+}
+.colours{
+    width: 100%;
+    display: flex;
+    padding: 20px 60px;
+    justify-content: space-between;
+
+}
+.colour img{
+    width: 100%;
+}
+.colour{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    /* background-color: #3e6ae1; */
+}
+.sec_container_full h1{
+    color: black;
+}
+
+.sec_container p{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.sec_container_full h4{
+    text-align: center;
+}
+.sec_container_full{
+    color: gray;
+}
+.sec_container_full{
+    width: 100%;
+    margin: 100px 0 100px 0;
+}
+.sec_container_full ul{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    
+}
+.sec_container_full{
+    text-align: start;
+}
+.buttons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 20px;
+    
+    /* background-color: blue; */
+}
+.primarybtn{
+    display: inline-block;
+    background-color: #3e6ae1;
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 5px 70px ;
+    border: none;
+    color: white;
+}
+.secondarybtn{
+    margin-left: 20px;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: 600;
+    background-color: rgb(185, 185, 194);
+    padding: 5px 60px ;
+    border: none;
+}
+.wheel_sec{
+    width: 100%;
+    padding: 40px 38%;
+    display: flex;
+}
+.wheel{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+    /* background-color: brown; */
+}
+.wheel_sec img{
+    width: 50px;
+}
+.wheels p{
+    margin: 20px 0 40px 0;
+    text-align: center;
+}
+.sec_container{
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.sec_container input{
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+}
+.Accessoires{
+    align-items: flex-start;
+}
+
+.Accessoires_content{
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+}
+.sec_container button{
+    margin-left: 130px;
+}
+.sec_container button{
+    margin: 10px 0 0 0;
+    /* align-items: center; */
+}
+.Accessoires h1{ 
+    text-align: center!important;
+    align-items: center;
+}

@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.nav-bar{
+    position: relative;
+    display: flex;
+    padding: 20px 20px;
+    /* background-color: rgb(255, 255, 255); */
+    z-index: 99;
+    transition: 1s;
+}
+.nav-links{
+    width: 70%;
+}
+.nav-links ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-links ul li{
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    color: rgb(59, 59, 59);
+}
+.logo{
+    width: 20%;
+}
+.logo img{
+    width: 100px;
+}
+.help svg{
+    width: 30px;
+}
+.help{
+    width: 20%;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    color: rgb(59, 59, 59);
+}
+.demo_containaer{
+    width: 100%;
+    /* height: ; */
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+.demo_content{
+    margin-top: 80px;
+    width: 660px;
+    height: fit-content;
+    /* padding-bottom: 500px; */
+}
+.demo_content h1,h3{
+    font-weight: 600;
+    padding: 0 0 10px 0;
+}
+.demo_content p{
+    font-weight: 400;
+    padding: 0 0 25px 0;
+}
+.loc_selection h4{
+    font-weight: 410;
+}
+.loc_selection{
+    margin-top: 20px;
+}
+.Locations{
+    position: relative;
+    width: 100%;
+    height: max-content;
+    /* background-color: yellow; */
+    display: flex;
+}
+.location{
+    min-width: 28%;
+    /* height: 100%; */
+    border: 3.1px solid #d4d6db;
+    padding: 10px;
+    font-weight: 450;
+    display: flex;
+    /* align-items: center; */
+    border-radius: 4px;
+    font-size: small;
+    /* box-shadow: 0 0 5px rgb(148, 146, 146); */
+    margin: 8px 10px 0 0;
+    /* background-color: blueviolet; */
+}
+.active{
+    border: 3.1px solid #3e6ae1;
+}
+.location br{
+    margin-bottom: 10px;
+}
+.timedate{
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    position: relative;
+}
+.input{
+    width: 100%;
+    /* margin-right: 10px; */
+}
+.input input{
+    width: 300px;
+    padding: 5px 5px;
+    background-color: rgba(238, 238, 238, 0.933);
+    border: none;
+    border-radius: 5px;
+    margin: 5px 0 20px 0;
+}
+.input label{
+    font-weight: 600;
+}
+.contact{
+    width: 100%;
+    padding: 0;
+    
+    position: relative;
+}
+.contact input{
+    display:block ;
+    width: 80%;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: rgba(238, 238, 238, 0.933);
+}
+.contact_content{
+    width: 100%;
+    max-height: max-content;
+    /* padding: 50px; */
+    display: flex;
+    /* flex-direction: column; */
+    text-align: start;
+    /* align-items: center; */
+    position: relative;
+}
+.contact_content input{
+    min-width: 300px;
+    padding: 10px 5px;
+    background-color: rgba(238, 238, 238, 0.933);
+    border: none;
+    border-radius: 5px;
+    margin-right: 45px;
+
+}
+.contact_content label{
+    font-weight: 600;
+}
+.contact_split {
+    padding: 20px 0px;
+}
+.contact_split input {
+    margin: 0 50px 30px 0;
+}
+
+/* .checkbox{
+    width: 80px;
+    border: 2px solid black;
+} */
+input.checkbox{
+    width: 25px;
+    height: 25px;
+}
+.btn{
+    margin-top: 50px;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 4px;
+    background-color: #3e6ae1;
+    color: #f4efef;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.btn:hover{
+    background-color: #1744ade3;
+}
+.footer_link{
+    width: 40%;
+    margin: 0 auto;
+}
+.footer_link ul{
+    display: flex;
+    justify-content: space-around;
+}
+.footer_link ul li{
+    color: rgb(0, 0, 0);
+    list-style: none;
+    cursor: pointer;
+    padding-bottom: 10px;
+    font-size: small;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 1</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<style>
+    #sendButton{
+        text-decoration: none;
+        color: white;
+        padding: 10px 30px;
+        background-color: blue;
+    }
+</style>
+<body>
+    <div>
+        <h1 id="carname">Tesla Model S</h1>
+        <a id="sendButton" href="page2.html">Send to Page 2</a>
+    </div>
+    <script>
+        document.getElementById('sendButton').addEventListener('click', function(event) {
+            const carName = document.getElementById('carname').innerText;
+            localStorage.setItem('carname', carName);
+        });
+    </script>
+</body>
+</html>

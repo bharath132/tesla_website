@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./demo.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="logo"> 
+            <img src="images/tesla-logo-png-20.png" alt="">
+        </div>
+        <div class="nav-links">
+            <ul >
+                <li onmouseenter="navbar_hover(),vehicle()">Vehicles</li>
+                <li onmouseenter="navbar_hover(),energy()" >Energy</li>
+                <li onmouseenter="navbar_hover(),charging()" >Charging</li>
+                <li onmouseenter="navbar_hover(),Discover()" >Discover</li>
+                <li onmouseenter="navbar_hover(),shop()">shop</li>
+            </ul>
+        </div>
+        
+        <div class="help">
+            <svg class="tds-icon tds-icon-help" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M12 20.5a8.5 8.5 0 1 1 0-17 8.5 8.5 0 0 1 0 17m0 1.5c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10m0-6a1 1 0 1 0 0 2 1 1 0 0 0 0-2m.053-3.533a8 8 0 0 1 .92-.767 7 7 0 0 0 .746-.61 2.3 2.3 0 0 0 .468-.635q.189-.38.188-.883 0-.56-.246-1.048-.237-.486-.771-.792-.534-.305-1.362-.305-.862 0-1.411.347a2 2 0 0 0-.788.89q-.09.201-.148.413c-.111.414-.445.767-.874.767-.428 0-.784-.35-.71-.772q.106-.61.386-1.15.452-.875 1.37-1.394Q10.742 6 12.07 6q1.395 0 2.273.544.885.536 1.271 1.337T16 9.489q0 .817-.254 1.403-.255.577-.616.94-.353.363-.943.817-.468.372-.747.635-.27.264-.451.627-.075.149-.113.302c-.108.424-.422.787-.86.787-.437 0-.806-.356-.76-.79a2.95 2.95 0 0 1 .797-1.743"></path></svg>
+            <svg class="tds-icon tds-icon-globe" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10M9.254 20.047a8 8 0 0 1-.768-1.378c-.404-.91-.722-1.985-.935-3.169h-3.3a8.53 8.53 0 0 0 5.003 4.547m.603-1.988c.336.757.718 1.324 1.103 1.69.382.364.732.501 1.04.501s.658-.137 1.04-.5c.385-.367.767-.934 1.103-1.69.321-.723.588-1.59.78-2.56H9.076c.192.97.459 1.837.78 2.56ZM8.75 12q.001 1.038.103 2h6.294q.102-.962.103-2-.001-1.038-.103-2H8.853q-.102.962-.103 2m-1.405-2H3.737a8.5 8.5 0 0 0-.237 2c0 .689.082 1.359.237 2h3.608a21 21 0 0 1 0-4m1.732-1.5h5.845c-.19-.97-.458-1.837-.779-2.56-.336-.756-.718-1.323-1.103-1.69-.382-.363-.732-.5-1.04-.5s-.658.137-1.04.5c-.385.367-.767.934-1.103 1.69-.321.723-.588 1.59-.78 2.56m7.577 1.5a20.7 20.7 0 0 1 0 4h3.61a8.5 8.5 0 0 0 .236-2 8.5 8.5 0 0 0-.237-2zm3.094-1.5a8.53 8.53 0 0 0-5.002-4.547c.287.408.543.873.768 1.378.404.91.722 1.985.935 3.169h3.3Zm-12.197 0c.213-1.184.531-2.26.935-3.169.225-.505.48-.97.768-1.378A8.53 8.53 0 0 0 4.252 8.5zm7.963 10.169c-.225.505-.48.97-.768 1.378a8.53 8.53 0 0 0 5.002-4.547h-3.3c-.212 1.184-.53 2.26-.934 3.169"></path></svg>
+            <svg class="tds-icon tds-icon-person" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2M6.858 18.752c.605-1.868 2.722-3.24 5.142-3.24s4.537 1.372 5.142 3.24C15.712 19.844 13.933 20.5 12 20.5s-3.712-.656-5.142-1.748m11.469-1.095c-1.02-2.165-3.483-3.645-6.327-3.645s-5.307 1.48-6.327 3.645A8.46 8.46 0 0 1 3.5 12c0-4.687 3.813-8.5 8.5-8.5s8.5 3.813 8.5 8.5a8.46 8.46 0 0 1-2.173 5.657M12 6a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7m0 5.5c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2-.897 2-2 2"></path></svg>
+            <!-- <img src="images/tesla-logo-png-20.png" alt="images/tesla-logo-png-20.png"><img src="images/tesla-logo-png-20.png" alt=""><img src="images/tesla-logo-png-20.png" alt=""> -->
+        </div>
+    </div>
+
+    <div class="demo_containaer">
+        <div class="demo_content">
+            <h1 class="carName">Demo Drive Cybertruck</h1>
+            <p>Experience Full Self-Driving (Supervised), Learn About Charging and Get All Your Questions Answered</p>
+            <div class="loc_selection">
+                <h3>Find Location and Time</h3>
+                <p>Zip Code:  : 122404</p>
+                <h4>Select Location</h4>
+                <div class="Locations">
+                    
+                    <div class="location active">Tulsa-6010 S 129th E Ave Tulsa OK <br>
+                        6010 S 129th E Ave, OK 74134</div>
+                    <div class="location">Kansas City-Stateline Road Kansas City MO <br>
+                        10111 Line Rd, MO 64114</div>
+                    <div class="location">Quail Springs Mall - Oklahoma City Self-Serve Demo Drive <br>
+                        2501 W Memorial Rd, OK 73134</div>
+                </div>
+                <div class="timedate">
+                    <div class="input">
+                        <label for="date">Date</label><br>
+                    <input name="date" type="date">
+                    </div>
+                    <div class="input">
+                        <label for="time">Time</label> <br>
+                        <input name="time" type="time">
+                    </div>
+                </div>
+            </div>
+            <div class="contact">
+                <h1>Contact Information </h1>
+                <div class="contact_content">
+                    <div class="contact_split">
+                        <div class="">  
+                            <label class="label" for="">First Name</label>
+                            <input class="input" type="text">
+                        </div>
+                        <div>
+                            <label for="">Last Name</label>
+                            <input type="text">
+                        </div>
+                        </div>
+                        <div class="contact_split">
+                            <div>
+                                <label for="">Email Address</label>
+                                <input type="email">
+                            </div>
+                            <div>
+                                <label for="">Phone Number</label>
+                                <input type="text">
+                            </div>
+                        </div>
+                    </div>
+                        
+                       
+                </div>
+                <input class="checkbox" type="checkbox"> Learn about Energy Products <br>
+                <button class="btn">Schedule Demo Drive</button>
+            </div> 
+                
+                
+            
+        </div>
+        <div class="footer_link">
+            <ul>
+                <li>Tesla © 2024</li>
+                <li>Privacy & Legal</li>
+                <li>Vehicle Recalls</li>
+                <li>Contact</li>
+                <li>News</li>
+                <li>Get Updates</li>
+                <li>Locations</li>
+            </ul>
+        </div>
+    </div>
+<body>
+    
+</body>
+<script src="./demo.js">
+</script>
+</html>
